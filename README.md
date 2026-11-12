@@ -328,18 +328,4 @@ docker compose logs app
 
 Finalmente, comprobar el funcionamiento de la API mediante las solicitudes CRUD descritas anteriormente.
 
-## 12. Conclusiones
 
-La actividad permitió documentar el proceso de ejecución de una aplicación contenerizada utilizando Docker, Node.js y MongoDB.
-
-Se comprobó la construcción de la imagen, el inicio de los contenedores y la conexión entre el servidor y la base de datos.
-
-También se realizaron pruebas de las cuatro operaciones CRUD, verificando la creación, consulta, actualización y eliminación de registros.
-
-Finalmente, se preparó un archivo de ejemplo para las variables de entorno y se documentaron errores frecuentes con sus respectivas soluciones, facilitando la ejecución reproducible del proyecto.
-
-## 13. Repositorio
-
-**Enlace al repositorio de GitHub:**
-
-[Colocar aquí el enlace al repositorio actualizado]
