@@ -24,6 +24,17 @@ app.post('/api/items', async (req, res) => {
     await newItem.save();
     res.status(201).json(newItem);
 });
+app.put('/api/items/:id', async (req, res) => {
+    const updated = await Item.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    if (!updated) return res.status(404).json({ error: 'No encontrado' });
+    res.json(updated);
+});
+
+app.delete('/api/items/:id', async (req, res) => {
+    const deleted = await Item.findByIdAndDelete(req.params.id);
+    if (!deleted) return res.status(404).json({ error: 'No encontrado' });
+    res.json({ mensaje: 'Eliminado' });
+});
 
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en puerto ${PORT}`);
