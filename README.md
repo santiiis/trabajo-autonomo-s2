@@ -291,7 +291,7 @@ Comprobar que las rutas utilizadas correspondan a las definidas en `src/app.js`.
 Para comprobar que el proyecto puede ejecutarse en otro equipo, se debe clonar el repositorio desde GitHub.
 
 ```powershell
-git clone URL_DEL_REPOSITORIO
+git clone https://github.com/santiiis/trabajo-autonomo-s2.git
 ```
 
 Ingresar a la carpeta:
